@@ -1,0 +1,462 @@
+@prefix : <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix FlySatisfaction: <http://www.semanticweb.org/borja/ontologies/2024/3/FlySatisfaction#> .
+@base <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/> .
+
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Owns
+:Owns rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf owl:topObjectProperty ;
+      rdfs:domain :Airline ;
+      rdfs:range :Aircraft .
+
+
+###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Writes
+:Writes rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf owl:topObjectProperty ;
+        rdfs:domain :Traveller ;
+        rdfs:range :Review .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nAircrafts
+:nAircrafts rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain :Airline ;
+            rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nCompanions
+:nCompanions rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain :Traveller ;
+             rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nReviews
+:nReviews rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:domain :Traveller ;
+          rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nValue
+:nValue rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty ;
+        rdfs:range xsd:integer .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#737-800
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#737-800> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf :Boeing ;
+                                                                                rdfs:comment "737-880 represents one of the passangers aircraft model produced by Boeing" ;
+                                                                                rdfs:label "737-880" .
+
+
+###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#767
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#767> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf :Boeing .
+
+
+###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#777
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#777> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf :Boeing ;
+                                                                            rdfs:comment "777 represents one of the passangers aircraft model produced by Boeing" .
+
+
+###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A320
+:A320 rdf:type owl:Class ;
+      rdfs:subClassOf :Airbus .
+
+
+###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A330
+:A330 rdf:type owl:Class ;
+      rdfs:subClassOf :Airbus ;
+      rdfs:comment "A330 represents one of the passangers aircraft model produced by Airbus" ;
+      rdfs:label "A330" .
+
+
+###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A380
+:A380 rdf:type owl:Class ;
+      rdfs:subClassOf :Airbus ;
+      rdfs:comment "A380 represents one of the passangers aircraft model produced by Airbus" ;
+      rdfs:label "A380" .
+
+
+###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airbus
+:Airbus rdf:type owl:Class ;
+        rdfs:subClassOf :Aircraft ;
+        owl:disjointWith :Boeing ;
+        rdfs:comment """The Airbus class represents a category of aircraft manufactured Airbus company.
+
+Same as https://es.dbpedia.org/page/Airbus""" ;
+        rdfs:label "Airbus" .
+
+
+###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Aircraft
+:Aircraft rdf:type owl:Class ;
+          rdfs:comment "This class represents an aircraft in general" ;
+          rdfs:label "Aircraft" .
+
+
+###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airline
+:Airline rdf:type owl:Class ;
+         rdfs:comment "This class represents the companies that provide flights to their costumers." ;
+         rdfs:label "Airline" .
+
+
+###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Bad
+:Bad rdf:type owl:Class ;
+     rdfs:subClassOf :Rating ;
+     owl:disjointWith :Good ;
+     rdfs:comment "Class that represents a review with bad rating" ;
+     rdfs:label "Bad" .
+
+
+###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Boeing
+:Boeing rdf:type owl:Class ;
+        rdfs:subClassOf :Aircraft ;
+        rdfs:comment "The Boeing class represents a category of aircraft manufactured Boeing company." ;
+        rdfs:label "Boeing" .
+
+
+###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Business
+:Business rdf:type owl:Class ;
+          rdfs:subClassOf :Type ;
+          owl:disjointWith :Leisure ;
+          rdfs:comment "Represents a Travellers that travels in a business trip." ;
+          rdfs:label "Business" .
+
+
+###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Couple
+:Couple rdf:type owl:Class ;
+        rdfs:subClassOf :Leisure ;
+        owl:disjointWith :Solo ;
+        rdfs:comment "Traveller that travels with a companion" ;
+        rdfs:label "Couple" .
+
+
+###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Good
+:Good rdf:type owl:Class ;
+      rdfs:subClassOf :Rating ;
+      rdfs:comment "Class that represents a review with good rating" ;
+      rdfs:label "Good" .
+
+
+###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Leisure
+:Leisure rdf:type owl:Class ;
+         rdfs:subClassOf :Type ;
+         rdfs:comment "Class that represents a Travaller that travels on vacation." ;
+         rdfs:label "Leisure" .
+
+
+###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Rating
+:Rating rdf:type owl:Class ;
+        rdfs:subClassOf :Review ;
+        rdfs:comment "Class that represents the level of satisfaction experienced by a Traveller" ;
+        rdfs:label "Rating" .
+
+
+###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Review
+:Review rdf:type owl:Class ;
+        rdfs:comment "This class represents a review made by a traveller" ;
+        rdfs:label "Review" .
+
+
+###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Solo
+:Solo rdf:type owl:Class ;
+      rdfs:subClassOf :Leisure ;
+      rdfs:comment "Traveller that travels with a companion." ;
+      rdfs:label "Solo" .
+
+
+###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Traveller
+:Traveller rdf:type owl:Class ;
+           rdfs:comment "This class represents a person that takes a flight" ;
+           rdfs:label "Traveller" .
+
+
+###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Type
+:Type rdf:type owl:Class ;
+      rdfs:subClassOf :Traveller ;
+      rdfs:comment "Class that represents de definition superclass type containing the different type of Travellers" ;
+      rdfs:label "Type" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Avion1
+:Avion1 rdf:type owl:NamedIndividual ,
+                 :A330 ;
+        rdfs:comment "Example of Airbus Aircraft" .
+
+
+###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Avion2
+:Avion2 rdf:type owl:NamedIndividual ,
+                 <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#737-800> ;
+        rdfs:comment "Example of Boeing Aircraft" .
+
+
+###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Avion3
+:Avion3 rdf:type owl:NamedIndividual ,
+                 :A380 ;
+        rdfs:comment "Example of Airbus Aircraft" .
+
+
+###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/BadRating
+:BadRating rdf:type owl:NamedIndividual ,
+                    :Rating ;
+           :nValue 1 ;
+           rdfs:comment "Instance created to show Bad class inference." .
+
+
+###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/GoodRating
+:GoodRating rdf:type owl:NamedIndividual ,
+                     :Rating ;
+            :nValue 5 ;
+            rdfs:comment "Instance created to show Good class inference." .
+
+
+###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/QatarAirways
+:QatarAirways rdf:type owl:NamedIndividual ,
+                       :Airline ;
+              :Owns :Avion2 ,
+                    :Avion3 ;
+              :nAircrafts 2 ;
+              rdfs:comment """Airline instance QatarAirways
+
+Same as https://dbpedia.org/page/Qatar_Airways""" ;
+              rdfs:label "QatarAirways" .
+
+
+###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Review1
+:Review1 rdf:type owl:NamedIndividual ,
+                  :Review ;
+         :nValue 1 ;
+         rdfs:comment "Review instance" .
+
+
+###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Ryanair
+:Ryanair rdf:type owl:NamedIndividual ,
+                  :Airline ;
+         :Owns :Avion1 ;
+         :nAircrafts 1 ;
+         rdfs:comment """Airline instance Ryanair
+
+Same as https://dbpedia.org/page/Ryanair""" ;
+         rdfs:label "Ryanair" .
+
+
+###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/TravellerCouple
+:TravellerCouple rdf:type owl:NamedIndividual ,
+                          :Traveller ;
+                 :nCompanions 1 ;
+                 :nReviews 1 ;
+                 rdfs:comment "Traveller example to show Couple inference" .
+
+
+###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/TravellerSolo
+:TravellerSolo rdf:type owl:NamedIndividual ,
+                        :Traveller ;
+               :nCompanions 0 ;
+               :nReviews 2 ;
+               rdfs:comment "Traveller example to show Solo inference" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#737-800>
+                <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#767>
+                <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#777>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :A320
+                :A330
+                :A380
+              )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#v> rdf:type swrl:Variable .
+
+<urn:swrl:var#r> rdf:type swrl:Variable .
+
+<urn:swrl:var#c> rdf:type swrl:Variable .
+
+<urn:swrl:var#t> rdf:type swrl:Variable .
+
+[ rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate :Rating ;
+                           swrl:argument1 <urn:swrl:var#r>
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                      swrl:propertyPredicate :nValue ;
+                                      swrl:argument1 <urn:swrl:var#r> ;
+                                      swrl:argument2 <urn:swrl:var#v>
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                                 swrl:builtin swrlb:lessThan ;
+                                                 swrl:arguments [ rdf:type rdf:List ;
+                                                                  rdf:first <urn:swrl:var#v> ;
+                                                                  rdf:rest [ rdf:type rdf:List ;
+                                                                             rdf:first 2 ;
+                                                                             rdf:rest rdf:nil
+                                                                           ]
+                                                                ]
+                                               ] ;
+                                     rdf:rest rdf:nil
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate :Bad ;
+                           swrl:argument1 <urn:swrl:var#r>
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:BuiltinAtom ;
+                           swrl:builtin swrlb:greaterThan ;
+                           swrl:arguments [ rdf:type rdf:List ;
+                                            rdf:first <urn:swrl:var#c> ;
+                                            rdf:rest [ rdf:type rdf:List ;
+                                                       rdf:first 0 ;
+                                                       rdf:rest rdf:nil
+                                                     ]
+                                          ]
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                      swrl:propertyPredicate :nCompanions ;
+                                      swrl:argument1 <urn:swrl:var#t> ;
+                                      swrl:argument2 <urn:swrl:var#c>
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:ClassAtom ;
+                                                 swrl:classPredicate :Traveller ;
+                                                 swrl:argument1 <urn:swrl:var#t>
+                                               ] ;
+                                     rdf:rest rdf:nil
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate :Couple ;
+                           swrl:argument1 <urn:swrl:var#t>
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:BuiltinAtom ;
+                           swrl:builtin swrlb:lessThan ;
+                           swrl:arguments [ rdf:type rdf:List ;
+                                            rdf:first <urn:swrl:var#c> ;
+                                            rdf:rest [ rdf:type rdf:List ;
+                                                       rdf:first 1 ;
+                                                       rdf:rest rdf:nil
+                                                     ]
+                                          ]
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                      swrl:propertyPredicate :nCompanions ;
+                                      swrl:argument1 <urn:swrl:var#t> ;
+                                      swrl:argument2 <urn:swrl:var#c>
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:ClassAtom ;
+                                                 swrl:classPredicate :Traveller ;
+                                                 swrl:argument1 <urn:swrl:var#t>
+                                               ] ;
+                                     rdf:rest rdf:nil
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate :Solo ;
+                           swrl:argument1 <urn:swrl:var#t>
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:BuiltinAtom ;
+                           swrl:builtin swrlb:greaterThan ;
+                           swrl:arguments [ rdf:type rdf:List ;
+                                            rdf:first <urn:swrl:var#v> ;
+                                            rdf:rest [ rdf:type rdf:List ;
+                                                       rdf:first 3 ;
+                                                       rdf:rest rdf:nil
+                                                     ]
+                                          ]
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate :Rating ;
+                                      swrl:argument1 <urn:swrl:var#r>
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                 swrl:propertyPredicate :nValue ;
+                                                 swrl:argument1 <urn:swrl:var#r> ;
+                                                 swrl:argument2 <urn:swrl:var#v>
+                                               ] ;
+                                     rdf:rest rdf:nil
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate :Good ;
+                           swrl:argument1 <urn:swrl:var#r>
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi

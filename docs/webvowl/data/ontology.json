@@ -1,0 +1,819 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction" ],
+    "iri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A320",
+    "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "A320"
+    },
+    "attributes" : [ "external" ],
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airbus",
+    "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Airbus",
+      "undefined" : "Airbus"
+    },
+    "subClasses" : [ "3", "0", "4" ],
+    "comment" : {
+      "undefined" : "The Airbus class represents a category of aircraft manufactured Airbus company.\n\nSame as https://es.dbpedia.org/page/Airbus"
+    },
+    "attributes" : [ "external" ],
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Type",
+    "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Type",
+      "undefined" : "Type"
+    },
+    "subClasses" : [ "10", "11" ],
+    "comment" : {
+      "undefined" : "Class that represents de definition superclass type containing the different type of Travellers"
+    },
+    "attributes" : [ "external" ],
+    "id" : "8",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Review",
+    "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Review",
+      "undefined" : "Review"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Review1",
+      "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
+      "comment" : {
+        "undefined" : "Review instance"
+      },
+      "labels" : {
+        "IRI-based" : "Review1"
+      }
+    } ],
+    "subClasses" : [ "7" ],
+    "comment" : {
+      "undefined" : "This class represents a review made by a traveller"
+    },
+    "attributes" : [ "external" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Traveller",
+    "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Traveller",
+      "undefined" : "Traveller"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/TravellerSolo",
+      "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
+      "comment" : {
+        "undefined" : "Traveller example to show Solo inference"
+      },
+      "labels" : {
+        "IRI-based" : "TravellerSolo"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/TravellerCouple",
+      "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
+      "comment" : {
+        "undefined" : "Traveller example to show Couple inference"
+      },
+      "labels" : {
+        "IRI-based" : "TravellerCouple"
+      }
+    } ],
+    "subClasses" : [ "8" ],
+    "comment" : {
+      "undefined" : "This class represents a person that takes a flight"
+    },
+    "attributes" : [ "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Leisure",
+    "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Leisure",
+      "undefined" : "Leisure"
+    },
+    "subClasses" : [ "18", "16" ],
+    "comment" : {
+      "undefined" : "Class that represents a Travaller that travels on vacation."
+    },
+    "attributes" : [ "external" ],
+    "id" : "11",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Rating",
+    "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Rating",
+      "undefined" : "Rating"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/BadRating",
+      "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
+      "comment" : {
+        "undefined" : "Instance created to show Bad class inference."
+      },
+      "labels" : {
+        "IRI-based" : "BadRating"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/GoodRating",
+      "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
+      "comment" : {
+        "undefined" : "Instance created to show Good class inference."
+      },
+      "labels" : {
+        "IRI-based" : "GoodRating"
+      }
+    } ],
+    "subClasses" : [ "6", "36" ],
+    "comment" : {
+      "undefined" : "Class that represents the level of satisfaction experienced by a Traveller"
+    },
+    "attributes" : [ "external" ],
+    "id" : "7",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airline",
+    "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Airline",
+      "undefined" : "Airline"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/QatarAirways",
+      "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
+      "comment" : {
+        "undefined" : "Airline instance QatarAirways\n\nSame as https://dbpedia.org/page/Qatar_Airways"
+      },
+      "labels" : {
+        "IRI-based" : "QatarAirways",
+        "undefined" : "QatarAirways"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Ryanair",
+      "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
+      "comment" : {
+        "undefined" : "Airline instance Ryanair\n\nSame as https://dbpedia.org/page/Ryanair"
+      },
+      "labels" : {
+        "IRI-based" : "Ryanair",
+        "undefined" : "Ryanair"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "This class represents the companies that provide flights to their costumers."
+    },
+    "attributes" : [ "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "19",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "38",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "35",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#777",
+    "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "777"
+    },
+    "comment" : {
+      "undefined" : "777 represents one of the passangers aircraft model produced by Boeing"
+    },
+    "id" : "22",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Aircraft",
+    "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Aircraft",
+      "undefined" : "Aircraft"
+    },
+    "subClasses" : [ "1", "23" ],
+    "comment" : {
+      "undefined" : "This class represents an aircraft in general"
+    },
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Business",
+    "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Business",
+      "undefined" : "Business"
+    },
+    "comment" : {
+      "undefined" : "Represents a Travellers that travels in a business trip."
+    },
+    "attributes" : [ "external" ],
+    "id" : "10",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Boeing",
+    "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Boeing",
+      "undefined" : "Boeing"
+    },
+    "subClasses" : [ "32", "25", "22" ],
+    "comment" : {
+      "undefined" : "The Boeing class represents a category of aircraft manufactured Boeing company."
+    },
+    "attributes" : [ "external" ],
+    "id" : "23",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Solo",
+    "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Solo",
+      "undefined" : "Solo"
+    },
+    "comment" : {
+      "undefined" : "Traveller that travels with a companion."
+    },
+    "attributes" : [ "external" ],
+    "id" : "16",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Bad",
+    "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Bad",
+      "undefined" : "Bad"
+    },
+    "comment" : {
+      "undefined" : "Class that represents a review with bad rating"
+    },
+    "attributes" : [ "external" ],
+    "id" : "36",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A380",
+    "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "A380",
+      "undefined" : "A380"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Avion3",
+      "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
+      "comment" : {
+        "undefined" : "Example of Airbus Aircraft"
+      },
+      "labels" : {
+        "IRI-based" : "Avion3"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A380 represents one of the passangers aircraft model produced by Airbus"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A330",
+    "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "A330",
+      "undefined" : "A330"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Avion1",
+      "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
+      "comment" : {
+        "undefined" : "Example of Airbus Aircraft"
+      },
+      "labels" : {
+        "IRI-based" : "Avion1"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A330 represents one of the passangers aircraft model produced by Airbus"
+    },
+    "attributes" : [ "external" ],
+    "id" : "3",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#737-800",
+    "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "737-800",
+      "undefined" : "737-880"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Avion2",
+      "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
+      "comment" : {
+        "undefined" : "Example of Boeing Aircraft"
+      },
+      "labels" : {
+        "IRI-based" : "Avion2"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "737-880 represents one of the passangers aircraft model produced by Boeing"
+    },
+    "id" : "32",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#767",
+    "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "767"
+    },
+    "id" : "25",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Good",
+    "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Good",
+      "undefined" : "Good"
+    },
+    "comment" : {
+      "undefined" : "Class that represents a review with good rating"
+    },
+    "attributes" : [ "external" ],
+    "id" : "6",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Couple",
+    "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Couple",
+      "undefined" : "Couple"
+    },
+    "comment" : {
+      "undefined" : "Traveller that travels with a companion"
+    },
+    "attributes" : [ "external" ],
+    "id" : "18",
+    "superClasses" : [ "11" ]
+  } ],
+  "property" : [ {
+    "id" : "5",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "46",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "48",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "49",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "50",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "51",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "52",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "53",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "54",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "55",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "56",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "7",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Owns",
+    "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "Owns"
+    },
+    "superproperty" : [ "14" ],
+    "domain" : "13",
+    "attributes" : [ "external", "object" ],
+    "id" : "12"
+  }, {
+    "range" : "11",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "15"
+  }, {
+    "range" : "11",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "19",
+    "subproperty" : [ "20", "12" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "14"
+  }, {
+    "range" : "23",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "21"
+  }, {
+    "range" : "23",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "24"
+  }, {
+    "range" : "9",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "26"
+  }, {
+    "range" : "28",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "27"
+  }, {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "29"
+  }, {
+    "range" : "8",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "30"
+  }, {
+    "range" : "23",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "31"
+  }, {
+    "range" : "2",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nReviews",
+    "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "nReviews"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nValue",
+    "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "nValue"
+    },
+    "domain" : "19",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "37"
+  }, {
+    "range" : "1",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "39"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "40"
+  }, {
+    "range" : "8",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "41"
+  }, {
+    "range" : "1",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nCompanions",
+    "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "nCompanions"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "46"
+  }, {
+    "range" : "22",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "47"
+  }, {
+    "range" : "3",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "48"
+  }, {
+    "range" : "4",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "49"
+  }, {
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "50"
+  }, {
+    "range" : "23",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "51"
+  }, {
+    "range" : "6",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "52"
+  }, {
+    "range" : "11",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "53"
+  }, {
+    "range" : "16",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "54"
+  }, {
+    "range" : "25",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "55"
+  }, {
+    "range" : "22",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Writes",
+    "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "Writes"
+    },
+    "superproperty" : [ "14" ],
+    "domain" : "9",
+    "attributes" : [ "external", "object" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "19",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nAircrafts",
+    "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "nAircrafts"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "58"
+  }, {
+    "range" : "7",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "59"
+  } ]
+}

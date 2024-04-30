@@ -1,0 +1,22 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:Bad" "base:Review" "base:Boeing" "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#767" "base:Aircraft" "base:A380" "base:Traveller" "base:A320" ":" "base:Couple" "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#777" "base:Solo" "base:Leisure" "base:Type" "base:Good" "base:Business" "base:Rating" "base:Airbus" "base:A330" ; /*classes style*/
+	":" -> "base:Boeing" [ label = "rdfs:subClassOf" ];
+	"base:Couple" -> "base:Leisure" [ label = "rdfs:subClassOf" ];
+	"http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#777" -> "base:Boeing" [ label = "rdfs:subClassOf" ];
+	"base:Type" -> "base:Traveller" [ label = "rdfs:subClassOf" ];
+	"base:A320" -> "base:Airbus" [ label = "rdfs:subClassOf" ];
+	"base:Leisure" -> "base:Type" [ label = "rdfs:subClassOf" ];
+	"base:Bad" -> "base:Rating" [ label = "rdfs:subClassOf" ];
+	"base:Business" -> "base:Type" [ label = "rdfs:subClassOf" ];
+	"base:Boeing" -> "base:Aircraft" [ label = "rdfs:subClassOf" ];
+	"http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#767" -> "base:Boeing" [ label = "rdfs:subClassOf" ];
+	"base:Rating" -> "base:Review" [ label = "rdfs:subClassOf" ];
+	"base:Solo" -> "base:Leisure" [ label = "rdfs:subClassOf" ];
+	"base:Airbus" -> "base:Aircraft" [ label = "rdfs:subClassOf" ];
+	"base:Good" -> "base:Rating" [ label = "rdfs:subClassOf" ];
+	"base:A380" -> "base:Airbus" [ label = "rdfs:subClassOf" ];
+	"base:A330" -> "base:Airbus" [ label = "rdfs:subClassOf" ];
+
+}

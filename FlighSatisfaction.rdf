@@ -1,0 +1,740 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/"
+     xml:base="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:FlySatisfaction="http://www.semanticweb.org/borja/ontologies/2024/3/FlySatisfaction#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Owns -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Owns">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airline"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Aircraft"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Writes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Writes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Traveller"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Review"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nAircrafts -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nAircrafts">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airline"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nCompanions -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nCompanions">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Traveller"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nReviews -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nReviews">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Traveller"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#737-800 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#737-800">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Boeing"/>
+        <rdfs:comment>737-880 represents one of the passangers aircraft model produced by Boeing</rdfs:comment>
+        <rdfs:label>737-880</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#767 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#767">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Boeing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#777 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#777">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Boeing"/>
+        <rdfs:comment>777 represents one of the passangers aircraft model produced by Boeing</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A320 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A320">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airbus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A330 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A330">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airbus"/>
+        <rdfs:comment>A330 represents one of the passangers aircraft model produced by Airbus</rdfs:comment>
+        <rdfs:label>A330</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A380 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A380">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airbus"/>
+        <rdfs:comment>A380 represents one of the passangers aircraft model produced by Airbus</rdfs:comment>
+        <rdfs:label>A380</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airbus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airbus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Aircraft"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Boeing"/>
+        <rdfs:comment>The Airbus class represents a category of aircraft manufactured Airbus company.
+
+Same as https://es.dbpedia.org/page/Airbus</rdfs:comment>
+        <rdfs:label>Airbus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Aircraft -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Aircraft">
+        <rdfs:comment>This class represents an aircraft in general</rdfs:comment>
+        <rdfs:label>Aircraft</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airline">
+        <rdfs:comment>This class represents the companies that provide flights to their costumers.</rdfs:comment>
+        <rdfs:label>Airline</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Bad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Bad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Rating"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Good"/>
+        <rdfs:comment>Class that represents a review with bad rating</rdfs:comment>
+        <rdfs:label>Bad</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Boeing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Boeing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Aircraft"/>
+        <rdfs:comment>The Boeing class represents a category of aircraft manufactured Boeing company.</rdfs:comment>
+        <rdfs:label>Boeing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Business -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Business">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Type"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Leisure"/>
+        <rdfs:comment>Represents a Travellers that travels in a business trip.</rdfs:comment>
+        <rdfs:label>Business</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Couple -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Couple">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Leisure"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Solo"/>
+        <rdfs:comment>Traveller that travels with a companion</rdfs:comment>
+        <rdfs:label>Couple</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Good -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Good">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Rating"/>
+        <rdfs:comment>Class that represents a review with good rating</rdfs:comment>
+        <rdfs:label>Good</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Leisure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Leisure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Type"/>
+        <rdfs:comment>Class that represents a Travaller that travels on vacation.</rdfs:comment>
+        <rdfs:label>Leisure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Rating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Rating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Review"/>
+        <rdfs:comment>Class that represents the level of satisfaction experienced by a Traveller</rdfs:comment>
+        <rdfs:label>Rating</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Review -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Review">
+        <rdfs:comment>This class represents a review made by a traveller</rdfs:comment>
+        <rdfs:label>Review</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Solo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Solo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Leisure"/>
+        <rdfs:comment>Traveller that travels with a companion.</rdfs:comment>
+        <rdfs:label>Solo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Traveller -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Traveller">
+        <rdfs:comment>This class represents a person that takes a flight</rdfs:comment>
+        <rdfs:label>Traveller</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Type">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Traveller"/>
+        <rdfs:comment>Class that represents de definition superclass type containing the different type of Travellers</rdfs:comment>
+        <rdfs:label>Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Avion1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Avion1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A330"/>
+        <rdfs:comment>Example of Airbus Aircraft</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Avion2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Avion2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#737-800"/>
+        <rdfs:comment>Example of Boeing Aircraft</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Avion3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Avion3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A380"/>
+        <rdfs:comment>Example of Airbus Aircraft</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/BadRating -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/BadRating">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Rating"/>
+        <nValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</nValue>
+        <rdfs:comment>Instance created to show Bad class inference.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/GoodRating -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/GoodRating">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Rating"/>
+        <nValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nValue>
+        <rdfs:comment>Instance created to show Good class inference.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/QatarAirways -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/QatarAirways">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airline"/>
+        <Owns rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Avion2"/>
+        <Owns rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Avion3"/>
+        <nAircrafts rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nAircrafts>
+        <rdfs:comment>Airline instance QatarAirways
+
+Same as https://dbpedia.org/page/Qatar_Airways</rdfs:comment>
+        <rdfs:label>QatarAirways</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Review1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Review1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Review"/>
+        <nValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</nValue>
+        <rdfs:comment>Review instance</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Ryanair -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Ryanair">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airline"/>
+        <Owns rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Avion1"/>
+        <nAircrafts rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</nAircrafts>
+        <rdfs:comment>Airline instance Ryanair
+
+Same as https://dbpedia.org/page/Ryanair</rdfs:comment>
+        <rdfs:label>Ryanair</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/TravellerCouple -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/TravellerCouple">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Traveller"/>
+        <nCompanions rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</nCompanions>
+        <nReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</nReviews>
+        <rdfs:comment>Traveller example to show Couple inference</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/TravellerSolo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/TravellerSolo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Traveller"/>
+        <nCompanions rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</nCompanions>
+        <nReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nReviews>
+        <rdfs:comment>Traveller example to show Solo inference</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#737-800"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#767"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#777"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A320"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A330"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A380"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl:var#v">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#r">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#c">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#t">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Rating"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nValue"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#v"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#v"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Bad"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                        <swrl:arguments>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first rdf:resource="urn:swrl:var#c"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nCompanions"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#c"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Traveller"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Couple"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                        <swrl:arguments>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first rdf:resource="urn:swrl:var#c"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nCompanions"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#c"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Traveller"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Solo"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                        <swrl:arguments>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first rdf:resource="urn:swrl:var#v"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Rating"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nValue"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#v"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Good"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

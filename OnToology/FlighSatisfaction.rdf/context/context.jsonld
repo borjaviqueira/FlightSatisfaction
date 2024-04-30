@@ -1,0 +1,95 @@
+{
+  "@context" : {
+    "" : {
+      "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#767"
+    },
+    "Review" : {
+      "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Review"
+    },
+    "Writes" : {
+      "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Writes",
+      "@type" : "@id"
+    },
+    "Type" : {
+      "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Type"
+    },
+    "Couple" : {
+      "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Couple"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "Leisure" : {
+      "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Leisure"
+    },
+    "A330" : {
+      "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A330"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Solo" : {
+      "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Solo"
+    },
+    "Business" : {
+      "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Business"
+    },
+    "Good" : {
+      "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Good"
+    },
+    "Traveller" : {
+      "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Traveller"
+    },
+    "nCompanions" : {
+      "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nCompanions",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "Bad" : {
+      "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Bad"
+    },
+    "A380" : {
+      "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A380"
+    },
+    "Rating" : {
+      "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Rating"
+    },
+    "nValue" : {
+      "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Aircraft" : {
+      "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Aircraft"
+    },
+    "Airbus" : {
+      "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airbus"
+    },
+    "nReviews" : {
+      "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nReviews",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Airline" : {
+      "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airline"
+    },
+    "Boeing" : {
+      "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Boeing"
+    },
+    "A320" : {
+      "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A320"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "nAircrafts" : {
+      "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nAircrafts",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Owns" : {
+      "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Owns",
+      "@type" : "@id"
+    }
+  }
+}

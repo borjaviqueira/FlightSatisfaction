@@ -43,7 +43,7 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Traveller"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Review"/>
-        <rdfs:label>Property that refers to the fact that a Traveller writes a Review</rdfs:label>
+        <rdfs:comment>Property that refers to the fact that a Traveller writes a Review</rdfs:comment>
         <rdfs:label>Writes</rdfs:label>
     </owl:ObjectProperty>
     

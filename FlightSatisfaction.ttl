@@ -29,8 +29,8 @@
         rdfs:subPropertyOf owl:topObjectProperty ;
         rdfs:domain :Traveller ;
         rdfs:range :Review ;
-        rdfs:label "Property that refers to the fact that a Traveller writes a Review" ,
-                   "Writes" .
+        rdfs:comment "Property that refers to the fact that a Traveller writes a Review" ;
+        rdfs:label "Writes" .
 
 
 #################################################################

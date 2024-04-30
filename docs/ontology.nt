@@ -21,7 +21,7 @@
 <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Writes> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Writes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Traveller> .
 <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Writes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Review> .
-<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Writes> <http://www.w3.org/2000/01/rdf-schema#label> "Property that refers to the fact that a Traveller writes a Review" .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Writes> <http://www.w3.org/2000/01/rdf-schema#comment> "Property that refers to the fact that a Traveller writes a Review" .
 <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Writes> <http://www.w3.org/2000/01/rdf-schema#label> "Writes" .
 # 
 # 

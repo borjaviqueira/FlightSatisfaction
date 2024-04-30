@@ -26,8 +26,8 @@
                                                                                rdfs:subPropertyOf owl:topObjectProperty ;
                                                                                rdfs:domain <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Traveller> ;
                                                                                rdfs:range <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Review> ;
-                                                                               rdfs:label "Property that refers to the fact that a Traveller writes a Review" ,
-                                                                                          "Writes" .
+                                                                               rdfs:comment "Property that refers to the fact that a Traveller writes a Review" ;
+                                                                               rdfs:label "Writes" .
 
 
 #################################################################

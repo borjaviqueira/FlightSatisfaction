@@ -673,13 +673,13 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "27"
   }, {
-    "range" : "8",
-    "domain" : "10",
+    "range" : "2",
+    "domain" : "1",
     "attributes" : [ "anonymous", "object" ],
     "id" : "29"
   }, {
-    "range" : "2",
-    "domain" : "23",
+    "range" : "8",
+    "domain" : "11",
     "attributes" : [ "anonymous", "object" ],
     "id" : "30"
   }, {
@@ -688,8 +688,8 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "31"
   }, {
-    "range" : "8",
-    "domain" : "11",
+    "range" : "2",
+    "domain" : "23",
     "attributes" : [ "anonymous", "object" ],
     "id" : "33"
   }, {
@@ -731,8 +731,8 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "40"
   }, {
-    "range" : "2",
-    "domain" : "1",
+    "range" : "8",
+    "domain" : "10",
     "attributes" : [ "anonymous", "object" ],
     "id" : "41"
   }, {
@@ -810,10 +810,13 @@
     "range" : "28",
     "label" : {
       "IRI-based" : "Writes",
-      "undefined" : "Property that refers to the fact that a Traveller writes a Review"
+      "undefined" : "Writes"
     },
     "superproperty" : [ "14" ],
     "domain" : "9",
+    "comment" : {
+      "undefined" : "Property that refers to the fact that a Traveller writes a Review"
+    },
     "attributes" : [ "object", "external" ],
     "id" : "20"
   }, {

@@ -1,0 +1,38 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; ":Bad" ":Review" ":Airline" ":Boeing" "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#767" ":Aircraft" ":A380" ":Traveller" ":A320" ":" ":Couple" "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#777" ":Solo" ":Leisure" ":Good" ":Business" ":Rating" ":Airbus" ":A330" ; /*classes style*/
+	":Couple" -> ":Solo" [ label = "owl:disjointWith" ];
+	":nCompanions" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	":Bad" -> ":Good" [ label = "owl:disjointWith" ];
+	":Owns" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	":Business" -> ":Leisure" [ label = "owl:disjointWith" ];
+	":QatarAirways" -> ":Avion3" [ label = ":Owns" ];
+	":QatarAirways" -> ":Avion2" [ label = ":Owns" ];
+	":nValue" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	":Airbus" -> ":Boeing" [ label = "owl:disjointWith" ];
+	":nAircrafts" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	":Ryanair" -> ":Avion1" [ label = ":Owns" ];
+	":nReviews" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"NULL" -> "-602542d3:18f2cbf866d:-7ff7" [ label = "rdf:rest" ];
+	"NULL" -> "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#767" [ label = "rdf:first" ];
+	"NULL" -> "-602542d3:18f2cbf866d:-7ffa" [ label = "rdf:rest" ];
+	"NULL" -> ":A330" [ label = "rdf:first" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "-602542d3:18f2cbf866d:-7ff8" [ label = "rdf:rest" ];
+	"NULL" -> "-602542d3:18f2cbf866d:-7ff9" [ label = "owl:members" ];
+	"NULL" -> "-602542d3:18f2cbf866d:-7ffb" [ label = "rdf:rest" ];
+	"NULL" -> "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#777" [ label = "rdf:first" ];
+	"NULL" -> ":A320" [ label = "rdf:first" ];
+	"NULL" -> ":A380" [ label = "rdf:first" ];
+	"NULL" -> "-602542d3:18f2cbf866d:-7ffc" [ label = "owl:members" ];
+	"NULL" -> ":" [ label = "rdf:first" ];
+	":Writes" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	":Airline" -> "xsd:integer" [ label = ":nAircrafts" ];
+	":Airline" -> ":Aircraft" [ label = ":Owns" ];
+	":Traveller" -> "xsd:integer" [ label = ":nReviews" ];
+	":Traveller" -> "xsd:integer" [ label = ":nCompanions" ];
+	":Rating" -> "xsd:integer" [ label = ":nValue" ];
+	":Traveller" -> ":Review" [ label = ":Writes" ];
+
+}

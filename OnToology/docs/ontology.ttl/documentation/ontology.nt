@@ -1,0 +1,303 @@
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Owns
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Owns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Owns> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Owns> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airline> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Owns> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Aircraft> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Owns> <http://www.w3.org/2000/01/rdf-schema#comment> "Property that refers to a Airline owning an Aircraft" .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Owns> <http://www.w3.org/2000/01/rdf-schema#label> "Owns" .
+# 
+# http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Writes
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Writes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Writes> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Writes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Traveller> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Writes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Review> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Writes> <http://www.w3.org/2000/01/rdf-schema#label> "Property that refers to the fact that a Traveller writes a Review" .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Writes> <http://www.w3.org/2000/01/rdf-schema#label> "Writes" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nAircrafts
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nAircrafts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nAircrafts> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nAircrafts> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airline> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nAircrafts> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nAircrafts> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of Aircrafts owned by a Airline" .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nAircrafts> <http://www.w3.org/2000/01/rdf-schema#label> "nAircraft" .
+# 
+# http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nCompanions
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nCompanions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nCompanions> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nCompanions> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Traveller> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nCompanions> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nCompanions> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of companions that travel with a Traveller" .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nCompanions> <http://www.w3.org/2000/01/rdf-schema#label> "nCompanions" .
+# 
+# http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nReviews
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nReviews> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nReviews> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nReviews> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Traveller> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nReviews> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nReviews> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of reviews written by a Traveller" .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nReviews> <http://www.w3.org/2000/01/rdf-schema#label> "nReviews" .
+# 
+# http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nValue
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Rating> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Number that represents the traveller satisfaction" .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nValue> <http://www.w3.org/2000/01/rdf-schema#label> "nValue" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#737-800
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#737-800> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#737-800> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Boeing> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#737-800> <http://www.w3.org/2000/01/rdf-schema#comment> "737-880 represents one of the passangers aircraft model produced by Boeing" .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#737-800> <http://www.w3.org/2000/01/rdf-schema#label> "737-880" .
+# 
+# http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#767
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#767> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#767> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Boeing> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#767> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that represents the 767 plane model from Boeing" .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#767> <http://www.w3.org/2000/01/rdf-schema#label> "767"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#777
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#777> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#777> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Boeing> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#777> <http://www.w3.org/2000/01/rdf-schema#comment> "777 represents one of the passangers aircraft model produced by Boeing" .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#777> <http://www.w3.org/2000/01/rdf-schema#label> "777"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A320
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A320> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A320> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airbus> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A320> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that represents de A320 model from Airbus" .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A320> <http://www.w3.org/2000/01/rdf-schema#label> "A320" .
+# 
+# http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A330
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A330> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A330> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airbus> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A330> <http://www.w3.org/2000/01/rdf-schema#comment> "A330 represents one of the passangers aircraft model produced by Airbus" .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A330> <http://www.w3.org/2000/01/rdf-schema#label> "A330" .
+# 
+# http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A380
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A380> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A380> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airbus> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A380> <http://www.w3.org/2000/01/rdf-schema#comment> "A380 represents one of the passangers aircraft model produced by Airbus" .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A380> <http://www.w3.org/2000/01/rdf-schema#label> "A380" .
+# 
+# http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airbus
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airbus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airbus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Aircraft> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airbus> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Boeing> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airbus> <http://www.w3.org/2000/01/rdf-schema#comment> "The Airbus class represents a category of aircraft manufactured Airbus company.\n\nSame as https://es.dbpedia.org/page/Airbus" .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airbus> <http://www.w3.org/2000/01/rdf-schema#label> "Airbus" .
+# 
+# http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Aircraft
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Aircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Aircraft> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents an aircraft in general" .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Aircraft> <http://www.w3.org/2000/01/rdf-schema#label> "Aircraft" .
+# 
+# http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airline
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airline> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents the companies that provide flights to their costumers." .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airline> <http://www.w3.org/2000/01/rdf-schema#label> "Airline" .
+# 
+# http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Bad
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Bad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Bad> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Rating> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Bad> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Good> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Bad> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that represents a review with bad rating" .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Bad> <http://www.w3.org/2000/01/rdf-schema#label> "Bad" .
+# 
+# http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Boeing
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Boeing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Boeing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Aircraft> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Boeing> <http://www.w3.org/2000/01/rdf-schema#comment> "The Boeing class represents a category of aircraft manufactured Boeing company." .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Boeing> <http://www.w3.org/2000/01/rdf-schema#label> "Boeing" .
+# 
+# http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Business
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Business> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Business> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Type> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Business> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Leisure> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Business> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a Travellers that travels in a business trip." .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Business> <http://www.w3.org/2000/01/rdf-schema#label> "Business" .
+# 
+# http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Couple
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Couple> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Couple> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Leisure> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Couple> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Solo> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Couple> <http://www.w3.org/2000/01/rdf-schema#comment> "Traveller that travels with a companion" .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Couple> <http://www.w3.org/2000/01/rdf-schema#label> "Couple" .
+# 
+# http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Good
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Good> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Good> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Rating> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Good> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that represents a review with good rating" .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Good> <http://www.w3.org/2000/01/rdf-schema#label> "Good" .
+# 
+# http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Leisure
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Leisure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Leisure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Type> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Leisure> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that represents a Travaller that travels on vacation." .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Leisure> <http://www.w3.org/2000/01/rdf-schema#label> "Leisure" .
+# 
+# http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Rating
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Rating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Review> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Rating> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that represents the level of satisfaction experienced by a Traveller" .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Rating> <http://www.w3.org/2000/01/rdf-schema#label> "Rating" .
+# 
+# http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Review
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Review> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents a review made by a traveller" .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Review> <http://www.w3.org/2000/01/rdf-schema#label> "Review" .
+# 
+# http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Solo
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Solo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Solo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Leisure> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Solo> <http://www.w3.org/2000/01/rdf-schema#comment> "Traveller that travels with a companion." .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Solo> <http://www.w3.org/2000/01/rdf-schema#label> "Solo" .
+# 
+# http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Traveller
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Traveller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Traveller> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents a person that takes a flight" .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Traveller> <http://www.w3.org/2000/01/rdf-schema#label> "Traveller" .
+# 
+# http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Type
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Type> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Traveller> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Type> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that represents de definition superclass type containing the different type of Travellers" .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Type> <http://www.w3.org/2000/01/rdf-schema#label> "Type" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Avion1
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Avion1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Avion1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A330> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Avion1> <http://www.w3.org/2000/01/rdf-schema#comment> "Example of Airbus Aircraft" .
+# 
+# http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Avion2
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Avion2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Avion2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#737-800> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Avion2> <http://www.w3.org/2000/01/rdf-schema#comment> "Example of Boeing Aircraft" .
+# 
+# http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Avion3
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Avion3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Avion3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A380> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Avion3> <http://www.w3.org/2000/01/rdf-schema#comment> "Example of Airbus Aircraft" .
+# 
+# http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/BadRating
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/BadRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/BadRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Rating> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/BadRating> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nValue> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/BadRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance created to show Bad class inference." .
+# 
+# http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/GoodRating
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/GoodRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/GoodRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Rating> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/GoodRating> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nValue> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/GoodRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance created to show Good class inference." .
+# 
+# http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/QatarAirways
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/QatarAirways> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/QatarAirways> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airline> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/QatarAirways> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Owns> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Avion2> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/QatarAirways> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Owns> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Avion3> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/QatarAirways> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nAircrafts> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/QatarAirways> <http://www.w3.org/2000/01/rdf-schema#comment> "Airline instance QatarAirways\n\nSame as https://dbpedia.org/page/Qatar_Airways" .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/QatarAirways> <http://www.w3.org/2000/01/rdf-schema#label> "QatarAirways" .
+# 
+# http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Review1
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Review1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Review1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Review> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Review1> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nValue> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Review1> <http://www.w3.org/2000/01/rdf-schema#comment> "Review instance" .
+# 
+# http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Ryanair
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Ryanair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Ryanair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airline> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Ryanair> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Owns> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Avion1> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Ryanair> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nAircrafts> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Ryanair> <http://www.w3.org/2000/01/rdf-schema#comment> "Airline instance Ryanair\n\nSame as https://dbpedia.org/page/Ryanair" .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Ryanair> <http://www.w3.org/2000/01/rdf-schema#label> "Ryanair" .
+# 
+# http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/TravellerCouple
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/TravellerCouple> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/TravellerCouple> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Traveller> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/TravellerCouple> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nCompanions> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/TravellerCouple> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nReviews> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/TravellerCouple> <http://www.w3.org/2000/01/rdf-schema#comment> "Traveller example to show Couple inference" .
+# 
+# http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/TravellerSolo
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/TravellerSolo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/TravellerSolo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Traveller> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/TravellerSolo> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nCompanions> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/TravellerSolo> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nReviews> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/TravellerSolo> <http://www.w3.org/2000/01/rdf-schema#comment> "Traveller example to show Solo inference" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid1 <http://www.w3.org/2002/07/owl#members> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#777> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#767> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#737-800> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid5 <http://www.w3.org/2002/07/owl#members> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A380> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A330> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A320> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

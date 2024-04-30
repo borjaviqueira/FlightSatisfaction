@@ -1,0 +1,38 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "FlightSatisfaction:Bad" "FlightSatisfaction:Review" "FlightSatisfaction:Airline" "FlightSatisfaction:Boeing" "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#767" "FlightSatisfaction:Aircraft" "FlightSatisfaction:A380" "FlightSatisfaction:Traveller" "FlightSatisfaction:A320" ":" "FlightSatisfaction:Couple" "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#777" "FlightSatisfaction:Solo" "FlightSatisfaction:Leisure" "FlightSatisfaction:Good" "FlightSatisfaction:Business" "FlightSatisfaction:Rating" "FlightSatisfaction:Airbus" "FlightSatisfaction:A330" ; /*classes style*/
+	"FlightSatisfaction:Couple" -> "FlightSatisfaction:Solo" [ label = "owl:disjointWith" ];
+	"FlightSatisfaction:nCompanions" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"FlightSatisfaction:Bad" -> "FlightSatisfaction:Good" [ label = "owl:disjointWith" ];
+	"FlightSatisfaction:Owns" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	"FlightSatisfaction:Business" -> "FlightSatisfaction:Leisure" [ label = "owl:disjointWith" ];
+	"FlightSatisfaction:QatarAirways" -> "FlightSatisfaction:Avion3" [ label = "FlightSatisfaction:Owns" ];
+	"FlightSatisfaction:QatarAirways" -> "FlightSatisfaction:Avion2" [ label = "FlightSatisfaction:Owns" ];
+	"FlightSatisfaction:nValue" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"FlightSatisfaction:Airbus" -> "FlightSatisfaction:Boeing" [ label = "owl:disjointWith" ];
+	"FlightSatisfaction:nAircrafts" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"FlightSatisfaction:Ryanair" -> "FlightSatisfaction:Avion1" [ label = "FlightSatisfaction:Owns" ];
+	"FlightSatisfaction:nReviews" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"NULL" -> "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#767" [ label = "rdf:first" ];
+	"NULL" -> "359aed07:18f2cc41da0:-7ff6" [ label = "rdf:rest" ];
+	"NULL" -> "359aed07:18f2cc41da0:-7ff9" [ label = "rdf:rest" ];
+	"NULL" -> "359aed07:18f2cc41da0:-7ff7" [ label = "owl:members" ];
+	"NULL" -> "FlightSatisfaction:A330" [ label = "rdf:first" ];
+	"NULL" -> "359aed07:18f2cc41da0:-7ff5" [ label = "rdf:rest" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "359aed07:18f2cc41da0:-7ffb" [ label = "owl:members" ];
+	"NULL" -> "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#777" [ label = "rdf:first" ];
+	"NULL" -> "FlightSatisfaction:A320" [ label = "rdf:first" ];
+	"NULL" -> "FlightSatisfaction:A380" [ label = "rdf:first" ];
+	"NULL" -> "359aed07:18f2cc41da0:-7ffa" [ label = "rdf:rest" ];
+	"NULL" -> ":" [ label = "rdf:first" ];
+	"FlightSatisfaction:Writes" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	"FlightSatisfaction:Airline" -> "xsd:integer" [ label = "FlightSatisfaction:nAircrafts" ];
+	"FlightSatisfaction:Airline" -> "FlightSatisfaction:Aircraft" [ label = "FlightSatisfaction:Owns" ];
+	"FlightSatisfaction:Traveller" -> "xsd:integer" [ label = "FlightSatisfaction:nReviews" ];
+	"FlightSatisfaction:Traveller" -> "xsd:integer" [ label = "FlightSatisfaction:nCompanions" ];
+	"FlightSatisfaction:Rating" -> "xsd:integer" [ label = "FlightSatisfaction:nValue" ];
+	"FlightSatisfaction:Traveller" -> "FlightSatisfaction:Review" [ label = "FlightSatisfaction:Writes" ];
+
+}

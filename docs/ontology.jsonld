@@ -40,6 +40,13 @@
 }, {
   "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#767",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Class that represents the 767 plane model from Boeing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "767"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Boeing"
   } ]
@@ -49,12 +56,22 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "777 represents one of the passangers aircraft model produced by Boeing"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "777"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Boeing"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A320",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Class that represents de A320 model from Airbus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "A320"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airbus"
   } ]
@@ -252,8 +269,14 @@
 }, {
   "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Owns",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Property that refers to a Airline owning an Aircraft"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airline"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Owns"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Aircraft"
@@ -408,6 +431,11 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Traveller"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Property that refers to the fact that a Traveller writes a Review"
+  }, {
+    "@value" : "Writes"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Review"
   } ],
@@ -417,8 +445,14 @@
 }, {
   "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nAircrafts",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Number of Aircrafts owned by a Airline"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airline"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "nAircraft"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
@@ -429,8 +463,14 @@
 }, {
   "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nCompanions",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Number of companions that travel with a Traveller"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Traveller"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "nCompanions"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
@@ -441,8 +481,14 @@
 }, {
   "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nReviews",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Number of reviews written by a Traveller"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Traveller"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "nReviews"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
@@ -453,6 +499,15 @@
 }, {
   "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Number that represents the traveller satisfaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "nValue"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ],

@@ -90,7 +90,11 @@
     "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "A320"
+      "IRI-based" : "A320",
+      "undefined" : "A320"
+    },
+    "comment" : {
+      "undefined" : "Class that represents de A320 model from Airbus"
     },
     "attributes" : [ "external" ],
     "id" : "0",
@@ -312,7 +316,8 @@
     "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "777"
+      "IRI-based" : "777",
+      "undefined" : "777"
     },
     "comment" : {
       "undefined" : "777 represents one of the passangers aircraft model produced by Boeing"
@@ -466,7 +471,11 @@
     "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "767"
+      "IRI-based" : "767",
+      "undefined" : "767"
+    },
+    "comment" : {
+      "undefined" : "Class that represents the 767 plane model from Boeing"
     },
     "id" : "25",
     "superClasses" : [ "23" ]
@@ -612,11 +621,15 @@
     "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
     "range" : "2",
     "label" : {
-      "IRI-based" : "Owns"
+      "IRI-based" : "Owns",
+      "undefined" : "Owns"
     },
     "superproperty" : [ "14" ],
     "domain" : "13",
-    "attributes" : [ "external", "object" ],
+    "comment" : {
+      "undefined" : "Property that refers to a Airline owning an Aircraft"
+    },
+    "attributes" : [ "object", "external" ],
     "id" : "12"
   }, {
     "range" : "11",
@@ -637,7 +650,7 @@
     },
     "domain" : "19",
     "subproperty" : [ "20", "12" ],
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "14"
   }, {
     "range" : "23",
@@ -660,13 +673,13 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "27"
   }, {
-    "range" : "2",
-    "domain" : "1",
+    "range" : "8",
+    "domain" : "10",
     "attributes" : [ "anonymous", "object" ],
     "id" : "29"
   }, {
-    "range" : "8",
-    "domain" : "11",
+    "range" : "2",
+    "domain" : "23",
     "attributes" : [ "anonymous", "object" ],
     "id" : "30"
   }, {
@@ -675,8 +688,8 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "31"
   }, {
-    "range" : "2",
-    "domain" : "23",
+    "range" : "8",
+    "domain" : "11",
     "attributes" : [ "anonymous", "object" ],
     "id" : "33"
   }, {
@@ -684,9 +697,13 @@
     "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
     "range" : "35",
     "label" : {
-      "IRI-based" : "nReviews"
+      "IRI-based" : "nReviews",
+      "undefined" : "nReviews"
     },
     "domain" : "9",
+    "comment" : {
+      "undefined" : "Number of reviews written by a Traveller"
+    },
     "attributes" : [ "datatype", "external" ],
     "id" : "34"
   }, {
@@ -694,9 +711,13 @@
     "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
     "range" : "38",
     "label" : {
-      "IRI-based" : "nValue"
+      "IRI-based" : "nValue",
+      "undefined" : "nValue"
     },
-    "domain" : "19",
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Number that represents the traveller satisfaction"
+    },
     "attributes" : [ "datatype", "external" ],
     "id" : "37"
   }, {
@@ -710,8 +731,8 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "40"
   }, {
-    "range" : "8",
-    "domain" : "10",
+    "range" : "2",
+    "domain" : "1",
     "attributes" : [ "anonymous", "object" ],
     "id" : "41"
   }, {
@@ -724,9 +745,13 @@
     "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
     "range" : "45",
     "label" : {
-      "IRI-based" : "nCompanions"
+      "IRI-based" : "nCompanions",
+      "undefined" : "nCompanions"
     },
     "domain" : "9",
+    "comment" : {
+      "undefined" : "Number of companions that travel with a Traveller"
+    },
     "attributes" : [ "datatype", "external" ],
     "id" : "46"
   }, {
@@ -784,11 +809,12 @@
     "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
     "range" : "28",
     "label" : {
-      "IRI-based" : "Writes"
+      "IRI-based" : "Writes",
+      "undefined" : "Property that refers to the fact that a Traveller writes a Review"
     },
     "superproperty" : [ "14" ],
     "domain" : "9",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "20"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
@@ -805,9 +831,13 @@
     "baseIri" : "http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction",
     "range" : "44",
     "label" : {
-      "IRI-based" : "nAircrafts"
+      "IRI-based" : "nAircrafts",
+      "undefined" : "nAircraft"
     },
     "domain" : "13",
+    "comment" : {
+      "undefined" : "Number of Aircrafts owned by a Airline"
+    },
     "attributes" : [ "datatype", "external" ],
     "id" : "58"
   }, {

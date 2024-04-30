@@ -19,14 +19,18 @@
 :Owns rdf:type owl:ObjectProperty ;
       rdfs:subPropertyOf owl:topObjectProperty ;
       rdfs:domain :Airline ;
-      rdfs:range :Aircraft .
+      rdfs:range :Aircraft ;
+      rdfs:comment "Property that refers to a Airline owning an Aircraft" ;
+      rdfs:label "Owns" .
 
 
 ###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Writes
 :Writes rdf:type owl:ObjectProperty ;
         rdfs:subPropertyOf owl:topObjectProperty ;
         rdfs:domain :Traveller ;
-        rdfs:range :Review .
+        rdfs:range :Review ;
+        rdfs:label "Property that refers to the fact that a Traveller writes a Review" ,
+                   "Writes" .
 
 
 #################################################################
@@ -37,27 +41,36 @@
 :nAircrafts rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf owl:topDataProperty ;
             rdfs:domain :Airline ;
-            rdfs:range xsd:integer .
+            rdfs:range xsd:integer ;
+            rdfs:comment "Number of Aircrafts owned by a Airline" ;
+            rdfs:label "nAircraft" .
 
 
 ###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nCompanions
 :nCompanions rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf owl:topDataProperty ;
              rdfs:domain :Traveller ;
-             rdfs:range xsd:integer .
+             rdfs:range xsd:integer ;
+             rdfs:comment "Number of companions that travel with a Traveller" ;
+             rdfs:label "nCompanions" .
 
 
 ###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nReviews
 :nReviews rdf:type owl:DatatypeProperty ;
           rdfs:subPropertyOf owl:topDataProperty ;
           rdfs:domain :Traveller ;
-          rdfs:range xsd:integer .
+          rdfs:range xsd:integer ;
+          rdfs:comment "Number of reviews written by a Traveller" ;
+          rdfs:label "nReviews" .
 
 
 ###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nValue
 :nValue rdf:type owl:DatatypeProperty ;
         rdfs:subPropertyOf owl:topDataProperty ;
-        rdfs:range xsd:integer .
+        rdfs:domain :Rating ;
+        rdfs:range xsd:integer ;
+        rdfs:comment "Number that represents the traveller satisfaction" ;
+        rdfs:label "nValue" .
 
 
 #################################################################
@@ -73,18 +86,23 @@
 
 ###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#767
 <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#767> rdf:type owl:Class ;
-                                                                            rdfs:subClassOf :Boeing .
+                                                                            rdfs:subClassOf :Boeing ;
+                                                                            rdfs:comment "Class that represents the 767 plane model from Boeing" ;
+                                                                            rdfs:label 767 .
 
 
 ###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#777
 <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#777> rdf:type owl:Class ;
                                                                             rdfs:subClassOf :Boeing ;
-                                                                            rdfs:comment "777 represents one of the passangers aircraft model produced by Boeing" .
+                                                                            rdfs:comment "777 represents one of the passangers aircraft model produced by Boeing" ;
+                                                                            rdfs:label 777 .
 
 
 ###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A320
 :A320 rdf:type owl:Class ;
-      rdfs:subClassOf :Airbus .
+      rdfs:subClassOf :Airbus ;
+      rdfs:comment "Class that represents de A320 model from Airbus" ;
+      rdfs:label "A320" .
 
 
 ###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A330

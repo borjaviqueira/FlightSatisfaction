@@ -16,14 +16,18 @@
 <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Owns> rdf:type owl:ObjectProperty ;
                                                                              rdfs:subPropertyOf owl:topObjectProperty ;
                                                                              rdfs:domain <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airline> ;
-                                                                             rdfs:range <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Aircraft> .
+                                                                             rdfs:range <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Aircraft> ;
+                                                                             rdfs:comment "Property that refers to a Airline owning an Aircraft" ;
+                                                                             rdfs:label "Owns" .
 
 
 ###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Writes
 <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Writes> rdf:type owl:ObjectProperty ;
                                                                                rdfs:subPropertyOf owl:topObjectProperty ;
                                                                                rdfs:domain <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Traveller> ;
-                                                                               rdfs:range <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Review> .
+                                                                               rdfs:range <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Review> ;
+                                                                               rdfs:label "Property that refers to the fact that a Traveller writes a Review" ,
+                                                                                          "Writes" .
 
 
 #################################################################
@@ -34,27 +38,36 @@
 <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nAircrafts> rdf:type owl:DatatypeProperty ;
                                                                                    rdfs:subPropertyOf owl:topDataProperty ;
                                                                                    rdfs:domain <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airline> ;
-                                                                                   rdfs:range xsd:integer .
+                                                                                   rdfs:range xsd:integer ;
+                                                                                   rdfs:comment "Number of Aircrafts owned by a Airline" ;
+                                                                                   rdfs:label "nAircraft" .
 
 
 ###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nCompanions
 <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nCompanions> rdf:type owl:DatatypeProperty ;
                                                                                     rdfs:subPropertyOf owl:topDataProperty ;
                                                                                     rdfs:domain <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Traveller> ;
-                                                                                    rdfs:range xsd:integer .
+                                                                                    rdfs:range xsd:integer ;
+                                                                                    rdfs:comment "Number of companions that travel with a Traveller" ;
+                                                                                    rdfs:label "nCompanions" .
 
 
 ###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nReviews
 <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nReviews> rdf:type owl:DatatypeProperty ;
                                                                                  rdfs:subPropertyOf owl:topDataProperty ;
                                                                                  rdfs:domain <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Traveller> ;
-                                                                                 rdfs:range xsd:integer .
+                                                                                 rdfs:range xsd:integer ;
+                                                                                 rdfs:comment "Number of reviews written by a Traveller" ;
+                                                                                 rdfs:label "nReviews" .
 
 
 ###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nValue
 <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/nValue> rdf:type owl:DatatypeProperty ;
                                                                                rdfs:subPropertyOf owl:topDataProperty ;
-                                                                               rdfs:range xsd:integer .
+                                                                               rdfs:domain <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Rating> ;
+                                                                               rdfs:range xsd:integer ;
+                                                                               rdfs:comment "Number that represents the traveller satisfaction" ;
+                                                                               rdfs:label "nValue" .
 
 
 #################################################################
@@ -70,18 +83,23 @@
 
 ###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#767
 <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#767> rdf:type owl:Class ;
-                                                                            rdfs:subClassOf <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Boeing> .
+                                                                            rdfs:subClassOf <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Boeing> ;
+                                                                            rdfs:comment "Class that represents the 767 plane model from Boeing" ;
+                                                                            rdfs:label 767 .
 
 
 ###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#777
 <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction#777> rdf:type owl:Class ;
                                                                             rdfs:subClassOf <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Boeing> ;
-                                                                            rdfs:comment "777 represents one of the passangers aircraft model produced by Boeing" .
+                                                                            rdfs:comment "777 represents one of the passangers aircraft model produced by Boeing" ;
+                                                                            rdfs:label 777 .
 
 
 ###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A320
 <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A320> rdf:type owl:Class ;
-                                                                             rdfs:subClassOf <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airbus> .
+                                                                             rdfs:subClassOf <http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/Airbus> ;
+                                                                             rdfs:comment "Class that represents de A320 model from Airbus" ;
+                                                                             rdfs:label "A320" .
 
 
 ###  http://www.semanticweb.org/borja/ontologies/2024/3/FlightSatisfaction/A330
